@@ -1,18 +1,23 @@
 <template>
   <div>
 
-      <div class="row">
-        <div class="col">
-          <section id="header" class="position-absolute">
-            <div class="header-text position-relative text-white">
-              <div class="container d-flex flex-column justify-content-center align-items-center">
-                <!-- <h1 class="c-header-styles text-uppercase">Live life to the fulles?</h1>
-                <p>Our electric bikes are specifically designed to give you the freedom to enjoy a more active and healthier lifestyle.</p> -->
-              </div>
+    <div class="row">
+      <div class="">
+        <section id="header" class="position-relative">
+          <div class="header-text position-absolute text-white">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+              <!-- play btn -->
+              <img class="position-absolute c-btn-position" src="@/assets/btn_02.png" alt="play video button">
+              <p class="play-styles position-absolute">play Video</p>
+              <!-- rectangle -->
+              <img class="position-absolute rectangle-position" src="@/assets/rectangle.png" alt="rectangle shape">
             </div>
-          </section>
-        </div>
+          </div>
+          <!-- shop bike btn -->
+          <img class="position-absolute c-position-shop" src="@/assets/shop.png" alt="shop bike button">
+        </section>
       </div>
+    </div>
   </div>
 </template>
 
@@ -40,7 +45,40 @@ export default {
       font-family: 'Oswald', sans-serif;
       font-weight: 500;
       font-size: 5rem;
-      // width: 5rem;
+    }
+
+    .c-btn-position {
+      height: 6rem;
+      left: 15rem;
+      top: 2rem;
+      cursor: pointer;
+    }
+
+    .play-styles {
+      font-family: 'Oswald', sans-serif;
+      transform: rotate(90deg);
+      left: 13rem;
+      top: 14rem;
+      width: 10rem;
+      letter-spacing: 5px;
+    }
+
+    .line-styles {
+      width: 20rem;
+      color: black;
+      height: 10rem;
+      transform: rotate(90deg);
+    }
+
+    .rectangle-position {
+      left: 17.5rem;
+      top: 18rem;
+    }
+
+    .c-position-shop {
+      height: 7rem;
+      right: 0rem;
+      top: 95vh;
     }
   }
 
