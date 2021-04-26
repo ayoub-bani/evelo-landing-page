@@ -1,4 +1,6 @@
-# evelo
+# Evelo Landing Page
+
+![landing page](https://github.com/ayoub-bani/evelo-landing-page/blob/master/src/assets/screencapture.png)
 
 ## Project setup
 ```
