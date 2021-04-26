@@ -1,7 +1,5 @@
 <template>
   <div>
-
-    <div class="row">
       <div class="">
         <section id="header" class="position-relative">
           <div class="header-text position-absolute text-white">
@@ -10,14 +8,15 @@
               <img class="position-absolute c-btn-position" src="@/assets/btn_02.png" alt="play video button">
               <p class="play-styles position-absolute">play Video</p>
               <!-- rectangle -->
-              <img class="position-absolute rectangle-position" src="@/assets/rectangle.png" alt="rectangle shape">
+              <img class="position-absolute rectangle-position" src="@/assets/rectangle_101.png" alt="rectangle shape">
             </div>
           </div>
           <!-- shop bike btn -->
           <img class="position-absolute c-position-shop" src="@/assets/shop.png" alt="shop bike button">
+          <!-- rectangle -->
+          <img class="position-absolute c-position-rectangle" src="@/assets/rectangle02.png" alt="rectangle">
         </section>
       </div>
-    </div>
   </div>
 </template>
 
@@ -49,7 +48,7 @@ export default {
 
     .c-btn-position {
       height: 6rem;
-      left: 15rem;
+      left: 7rem;
       top: 2rem;
       cursor: pointer;
     }
@@ -57,7 +56,7 @@ export default {
     .play-styles {
       font-family: 'Oswald', sans-serif;
       transform: rotate(90deg);
-      left: 13rem;
+      left: 5rem;
       top: 14rem;
       width: 10rem;
       letter-spacing: 5px;
@@ -71,14 +70,20 @@ export default {
     }
 
     .rectangle-position {
-      left: 17.5rem;
+      height: 15rem;
+      left: 9.7rem;
       top: 18rem;
+      z-index: 5;
     }
 
     .c-position-shop {
       height: 7rem;
       right: 0rem;
       top: 95vh;
+    }
+    .c-position-rectangle {
+      bottom: -2px;
+      z-index: -1;
     }
   }
 
